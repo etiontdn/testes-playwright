@@ -1,0 +1,22 @@
+{
+  "name": "testes-playwright",
+  "version": "1.0.0",
+  "description": "Um conjunto de testes feito com a ferramenta playwright, separado para cada conteúdo diferente",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etiontdn/testes-playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etiontdn/testes-playwright/issues"
+  },
+  "homepage": "https://github.com/etiontdn/testes-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.10"
+  }
+}
