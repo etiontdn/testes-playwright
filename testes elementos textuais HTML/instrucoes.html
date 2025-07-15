@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Elementos Textuais do HTML e Exemplos</title>
+        <style>
+            /* Reset básico para garantir consistência */
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                background-color: #f4f4f4;
+                display: flex; /* Adicionado para layout, como no style.css original */
+                flex-direction: column; /* Alterado para empilhar conteúdo verticalmente */
+                align-items: center; /* Centraliza horizontalmente */
+                justify-content: flex-start; /* Alinha ao topo */
+                padding: 20px;
+            }
+
+            nav {
+                background: #333;
+                color: #fff;
+                padding: 10px 0;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin: 0 15px;
+            }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            main {
+                background: #fff;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 90%;
+                max-width: 800px;
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #0056b3;
+            }
+
+            section {
+                margin-bottom: 30px;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+
+            h2 {
+                color: #007bff;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                color: #0056b3;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            .example-box {
+                background-color: #e9e9e9;
+                border: 1px dashed #aaa;
+                padding: 15px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+            }
+
+            code {
+                background-color: #eee;
+                padding: 2px 4px;
+                border-radius: 3px;
+                font-family: "Courier New", Courier, monospace;
+            }
+
+            strong {
+                color: #d15100;
+            }
+
+            em {
+                color: #008080;
+            }
+
+            mark {
+                background-color: yellow;
+                padding: 2px 0;
+            }
+
+            small {
+                font-size: 0.8em;
+                color: #666;
+            }
+
+            blockquote {
+                border-left: 5px solid #ccc;
+                margin: 1.5em 0;
+                padding: 0.5em 10px;
+                quotes: "\201C""\201D""\2018""\2019";
+                background-color: #f0f0f0;
+            }
+
+            q {
+                font-style: italic;
+            }
+
+            abbr {
+                border-bottom: 1px dotted #000;
+                cursor: help;
+            }
+
+            address {
+                font-style: normal;
+                margin-top: 15px;
+                padding-top: 10px;
+                border-top: 1px solid #eee;
+                color: #555;
+            }
+
+            del {
+                color: #999;
+                text-decoration: line-through;
+            }
+
+            ins {
+                background-color: #d4edda;
+                text-decoration: none;
+            }
+
+            sub,
+            sup {
+                font-size: 0.75em;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+
+            sub {
+                bottom: -0.25em;
+            }
+
+            sup {
+                top: -0.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#semanticos">Elementos Semânticos</a></li>
+                <li>
+                    <a href="#livres-de-significado"
+                        >Elementos Livres de Significado</a
+                    >
+                </li>
+                <li>
+                    <a href="#outros-elementos">Outros Elementos Textuais</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1 id="introducao">
+                Elementos Textuais do HTML e Exemplos Práticos
+            </h1>
+
+            <section>
+                <h2>Introdução aos Elementos Textuais</h2>
+                <p>
+                    Se necessário use os exemplos à baixo para entender como
+                    usar esses elementos:
+                </p>
+            </section>
+
+            <section id="semanticos">
+                <h2>Elementos Semânticos</h2>
+                <p>
+                    Elementos semânticos são aqueles que transmitem significado
+                    sobre o seu conteúdo tanto para o navegador quanto para o
+                    desenvolvedor. Eles ajudam a criar uma estrutura lógica para
+                    a página, melhorando a compreensão por parte de motores de
+                    busca e tecnologias assistivas.
+                </p>
+
+                <h3><code>&lt;main&gt;</code></h3>
+                <p>
+                    O elemento <code>&lt;main&gt;</code> representa o conteúdo
+                    dominante do <code>&lt;body&gt;</code>. Ele deve conter o
+                    conteúdo único de um documento, ou seja, o conteúdo que não
+                    é repetido em outras páginas (como barras laterais, links de
+                    navegação, informações de direitos autorais repetidas,
+                    logotipos de sites e formulários de pesquisa, exceto se o
+                    formulário de pesquisa for a função principal do documento).
+                </p>
+                <div class="example-box">
+                    Exemplo de uso de &lt;main&gt; (todo o conteúdo principal
+                    desta página está dentro de &lt;main&gt;).
+                </div>
+
+                <h3><code>&lt;section&gt;</code></h3>
+                <p>
+                    O elemento <code>&lt;section&gt;</code> representa uma seção
+                    genérica de um documento, geralmente com um cabeçalho. É uma
+                    boa prática usar <code>&lt;section&gt;</code> para agrupar
+                    conteúdo relacionado.
+                </p>
+                <div class="example-box">
+                    Exemplo de uso de &lt;section&gt;:
+                    <section
+                        style="
+                            border: 1px dashed green;
+                            padding: 10px;
+                            margin-top: 10px;
+                        "
+                    >
+                        <h4>Esta é uma sub-seção de exemplo</h4>
+                        <p>Aqui está algum conteúdo dentro de uma seção.</p>
+                    </section>
+                </div>
+
+                <h3>
+                    <code>&lt;h{n}&gt;</code> (<code>&lt;h1&gt;</code> a
+                    <code>&lt;h6&gt;</code>)
+                </h3>
+                <p>
+                    Os elementos <code>&lt;h1&gt;</code> a
+                    <code>&lt;h6&gt;</code> representam os seis níveis de
+                    cabeçalhos de seção de um documento.
+                    <code>&lt;h1&gt;</code> é o mais importante (geralmente o
+                    título principal da página), e <code>&lt;h6&gt;</code> é o
+                    menos importante. Use-os de forma hierárquica para
+                    estruturar seu conteúdo.
+                </p>
+                <div class="example-box">
+                    <h1>Título de Nível 1</h1>
+                    <h2>Título de Nível 2</h2>
+                    <h3>Título de Nível 3</h3>
+                    <h4>Título de Nível 4</h4>
+                    <h5>Título de Nível 5</h5>
+                    <h6>Título de Nível 6</h6>
+                </div>
+
+                <h3><code>&lt;p&gt;</code></h3>
+                <p>
+                    O elemento <code>&lt;p&gt;</code> representa um parágrafo de
+                    texto. É um dos elementos mais fundamentais para conteúdo
+                    textual.
+                </p>
+                <div class="example-box">
+                    <p>Este é um exemplo de um parágrafo de texto simples.</p>
+                    <p>
+                        Você pode ter múltiplos parágrafos para organizar suas
+                        ideias.
+                    </p>
+                </div>
+            </section>
+
+            <section id="livres-de-significado">
+                <h2>Elementos Livres de Significado (Não Semânticos)</h2>
+                <p>
+                    Estes elementos são usados principalmente para fins de
+                    estilo ou agrupamento de conteúdo quando não há um elemento
+                    semântico mais apropriado. Eles não carregam nenhum
+                    significado inerente.
+                </p>
+
+                <h3><code>&lt;span&gt;</code></h3>
+                <p>
+                    O elemento <code>&lt;span&gt;</code> é um contêiner em linha
+                    genérico para fraseado de conteúdo, que não representa
+                    semanticamente nada. É usado para aplicar estilos a uma
+                    parte de um texto ou para manipular uma parte de um texto
+                    via JavaScript.
+                </p>
+                <div class="example-box">
+                    Este é um texto com uma
+                    <span style="color: blue; font-weight: bold"
+                        >parte destacada com span</span
+                    >
+                    para estilo.
+                </div>
+
+                <h3><code>&lt;div&gt;</code></h3>
+                <p>
+                    O elemento <code>&lt;div&gt;</code> é um contêiner de bloco
+                    genérico para conteúdo. Não representa semanticamente nada e
+                    é usado quando nenhum outro elemento semântico é apropriado
+                    para agrupar elementos para fins de estilo (com CSS) ou
+                    manipulação (com JavaScript).
+                </p>
+                <div class="example-box">
+                    <div
+                        style="
+                            background-color: lightgoldenrodyellow;
+                            padding: 15px;
+                            border: 1px solid orange;
+                        "
+                    >
+                        <h4>Este é um div de exemplo</h4>
+                        <p>
+                            Aqui está algum conteúdo dentro de um div, usado
+                            para agrupar elementos.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="outros-elementos">
+                <h2>Outros Elementos Textuais Importantes</h2>
+                <p>
+                    Além dos elementos principais, HTML oferece diversos outros
+                    elementos para refinar o significado e a apresentação do
+                    texto.
+                </p>
+
+                <h3><code>&lt;strong&gt;</code> e <code>&lt;b&gt;</code></h3>
+                <p>
+                    O elemento <code>&lt;strong&gt;</code> indica que seu
+                    conteúdo tem forte importância, seriedade ou urgência. O
+                    elemento <code>&lt;b&gt;</code> (bold) é usado para chamar a
+                    atenção para o texto sem transmitir importância adicional.
+                </p>
+                <div class="example-box">
+                    Este texto é <strong>importante</strong> (strong).<br />
+                    Este texto é <b>apenas em negrito</b> (b).
+                </div>
+
+                <h3><code>&lt;em&gt;</code> e <code>&lt;i&gt;</code></h3>
+                <p>
+                    O elemento <code>&lt;em&gt;</code> (emphasis) é usado para
+                    dar ênfase a uma palavra ou frase, o que geralmente é
+                    renderizado em itálico. O elemento
+                    <code>&lt;i&gt;</code> (italic) é usado para texto que deve
+                    ser apresentado em itálico por uma razão diferente de
+                    ênfase, como termos técnicos, expressões idiomáticas ou
+                    pensamentos.
+                </p>
+                <div class="example-box">
+                    Eu *realmente* <em>amo</em> HTML (ênfase).<br />
+                    O termo biológico para cães é
+                    <i>Canis familiaris</i> (itálico).
+                </div>
+
+                <h3><code>&lt;mark&gt;</code></h3>
+                <p>
+                    O elemento <code>&lt;mark&gt;</code> representa texto que é
+                    destacado ou marcado para fins de referência ou anotação.
+                </p>
+                <div class="example-box">
+                    Por favor, lembre-se de <mark>comprar leite</mark> hoje.
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
