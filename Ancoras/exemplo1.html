@@ -1,17 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>DCC202 - Elementos Textuais do HTML</title>
+        <title>O Elemento Link</title>
+
+        <!-- Compiled and minified CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
     </head>
     <body>
-        <h1>Títulos são feitos com a tag h (heading)</h1>
-        <h2>Este é um Heading 2</h2>
-        <h3>Este é um Heading 3</h3>
-        <h4>Este é um Heading 4</h4>
-        <h5>Este é um Heading 5</h5>
-        <h6>Este é um Heading 6</h6>
-        <p>Este é um parágrafo: Olá mundo!</p>
+        <main>
+            <section>
+                <h1>O Elemento &lt;link&gt; no HTML</h1>
+                <p>
+                    O elemento <code>&lt;link&gt;</code> é fundamental em
+                    páginas HTML para estabelecer relações do documento atual
+                    com recursos externos. Ele é sempre utilizado dentro da
+                    seção <code>&lt;head&gt;</code> do HTML e não aparece
+                    visivelmente na página, ao contrário de outros elementos do
+                    corpo.
+                </p>
+
+                <p>
+                    Sua principal função é indicar quais folhas de estilo (CSS)
+                    podem ser usadas na página, permitindo que o design e a
+                    estilização sejam aplicados. Por exemplo, para vincular uma
+                    folha de estilo externa, usamos:
+                </p>
+
+                <pre><code>&lt;link rel="stylesheet" href="estilo.css"&gt;</code></pre>
+
+                <p>
+                    Os dois atributos mais importantes do elemento
+                    <code>&lt;link&gt;</code> são:
+                </p>
+                <ul>
+                    <li>
+                        <code>href</code>: Define a URI (Uniform Resource
+                        Identifier) do recurso alvo, ou seja, o caminho para o
+                        arquivo externo.
+                    </li>
+                    <li>
+                        <code>rel</code>: Define a relação do recurso externo
+                        com o documento atual, especificando o tipo de relação
+                        (ex: "stylesheet" para folhas de estilo).
+                    </li>
+                </ul>
+
+                <p>
+                    Em resumo, o <code>&lt;link&gt;</code> atua como uma ponte
+                    entre o seu documento HTML e outros recursos importantes
+                    para sua renderização e funcionalidade, por exemplo, nesta
+                    página usamos o Materialize CSS para estilização simplesmente
+                    adicionando um link.
+                </p>
+            </section>
+        </main>
     </body>
 </html>

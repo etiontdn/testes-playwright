@@ -1,17 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>DCC202 - Elementos Textuais do HTML</title>
+        <title>O Elemento Âncora</title>
     </head>
     <body>
-        <p>
-            Esta é uma frase de exemplo com texto
-            <strong>em negrito (forte)</strong>, uma palavra
-            <em>em itálico (ênfase)</em>, e um trecho <mark>marcado</mark>.
-            Dentro desta frase, temos um
-            <span>pequeno pedaço de texto com span</span>.
-        </p>
+        <main>
+            <h1>O Elemento &lt;a&gt; (Âncora) no HTML</h1>
+            <p>
+                O elemento <code>&lt;a&gt;</code>, também conhecido como
+                "âncora", é utilizado para definir um hiperlink. Ele permite que
+                você conecte o seu documento atual a um recurso externo, seja
+                outra página web, um arquivo para download, ou até mesmo uma
+                seção específica dentro da mesma página.
+            </p>
+
+            <p>
+                Diferentemente de elementos como <code>&lt;link&gt;</code>, o
+                elemento <code>&lt;a&gt;</code> só pode aparecer dentro do
+                <code>&lt;body&gt;</code> do documento HTML, pois ele é parte do
+                conteúdo visível e interativo da página.
+            </p>
+
+            <p>
+                O atributo mais importante para o elemento
+                <code>&lt;a&gt;</code> é o <code>href</code>. Ele define a URI
+                (Uniform Resource Identifier) do recurso alvo, ou seja, para
+                onde o link irá apontar. Por exemplo, para criar um link para o
+                Google, você faria:
+            </p>
+
+            <pre><code>&lt;a href="http://google.com"&gt;Google&lt;/a&gt;</code></pre>
+
+            <a href="http://google.com">Google</a>
+
+            <p>
+                Além do <code>href</code>, existem outros atributos úteis que
+                podem ser usados para controlar o comportamento do link:
+            </p>
+            <ul>
+                <li>
+                    <code>rel</code>: Define a relação do recurso linkado com o
+                    documento atual (ex: "nofollow", "noopener", "noreferrer").
+                </li>
+                <li>
+                    <code>download</code>: Quando presente, indica que o recurso
+                    deve ser baixado diretamente pelo navegador quando o link é
+                    clicado, em vez de ser navegado.
+                </li>
+                <li>
+                    <code>target</code>: Especifica onde o recurso deve ser
+                    aberto. Valores comuns incluem <code>_blank</code> (abre em
+                    uma nova aba ou janela), <code>_self</code> (abre na mesma
+                    janela/aba - padrão), <code>_parent</code>, ou
+                    <code>_top</code>.
+                </li>
+            </ul>
+        </main>
     </body>
 </html>
