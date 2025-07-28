@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Listas HTML</title>
+</head>
+<body>
+    <main>
+        <h1>Exemplos de Listas em HTML</h1>
+        <p>As listas HTML são usadas para agrupar conjuntos de itens relacionados de forma organizada. Existem vários tipos para diferentes propósitos:</p>
+
+        <h2>Listas Não Ordenadas (`&lt;ul&gt;`)</h2>
+        <p>São usadas para agrupar itens que não têm uma ordem específica. Geralmente são renderizadas com marcadores (bolinhas).</p>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item um&lt;/li&gt;
+    &lt;li&gt;Item dois&lt;/li&gt;
+    &lt;li&gt;Item três&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <h3>Exemplo Visível:</h3>
+        <ul>
+            <li>Item um</li>
+            <li>Item dois</li>
+            <li>Item três</li>
+        </ul>
+
+        <h2>Listas Ordenadas (`&lt;ol&gt;`)</h2>
+        <p>Usadas para agrupar itens que precisam ser numerados ou ordenados (ex: passos de uma receita, rankings). São renderizadas com números ou letras.</p>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;Primeiro passo&lt;/li&gt;
+    &lt;li&gt;Segundo passo&lt;/li&gt;
+    &lt;li&gt;Terceiro passo&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        <h3>Exemplo Visível:</h3>
+        <ol>
+            <li>Primeiro passo</li>
+            <li>Segundo passo</li>
+            <li>Terceiro passo</li>
+        </ol>
+
+        <h2>Listas Aninhadas</h2>
+        <p>É possível aninhar listas uma dentro da outra para criar estruturas hierárquicas, combinando `&lt;ul&gt;` e `&lt;ol&gt;` conforme a necessidade.</p>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Frutas
+        &lt;ul&gt;
+            &lt;li&gt;Maçã&lt;/li&gt;
+            &lt;li&gt;Banana&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Vegetais
+        &lt;ol&gt;
+            &lt;li&gt;Cenoura&lt;/li&gt;
+            &lt;li&gt;Alface&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <h3>Exemplo Visível:</h3>
+        <ul>
+            <li>Frutas
+                <ul>
+                    <li>Maçã</li>
+                    <li>Banana</li>
+                </ul>
+            </li>
+            <li>Vegetais
+                <ol>
+                    <li>Cenoura</li>
+                    <li>Alface</li>
+                </ol>
+            </li>
+        </ul>
+
+        <h2>Listas de Definição (`&lt;dl&gt;`)</h2>
+        <p>São usadas para criar uma lista de termos e suas respectivas definições, como em um glossário.</p>
+        <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de Marcação de Hipertexto.&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Folhas de Estilo em Cascata.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+        <h3>Exemplo Visível:</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de Marcação de Hipertexto.</dd>
+            <dt>CSS</dt>
+            <dd>Folhas de Estilo em Cascata.</dd>
+        </dl>
+    </main>
+</body>
+</html>
